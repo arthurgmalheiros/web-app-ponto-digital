@@ -43,9 +43,9 @@ export const HomeLogo = styled.img`
 
 export const Content = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
-  flex-wrap: nowrap;
+  align-items: center;
 `;
 
 export const NameHeader = styled.span`

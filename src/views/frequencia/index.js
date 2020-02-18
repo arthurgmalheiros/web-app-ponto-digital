@@ -1,16 +1,16 @@
 import React from "react";
 import * as Styles from "./styles";
 import "antd/dist/antd.css";
-import solides from "../../assets/solides.png";
+import solidesLogo from "../../assets/solides.png";
 
 function Frequencia() {
   return (
     <Styles.HomeContainer>
       <Styles.HomeHeader>
-        <Styles.HomeLogo src={solides} alt="logo"></Styles.HomeLogo>
+        <Styles.HomeLogo src={solidesLogo} alt="logo"></Styles.HomeLogo>
         <Styles.DivFlex></Styles.DivFlex>
         <Styles.NameHeader>
-          <a href="/">
+          <a href="/Home">
             <p>Home</p>
           </a>
         </Styles.NameHeader>
@@ -30,10 +30,10 @@ function Frequencia() {
   );
 }
 
-const Entrada = () => JSON.parse(localStorage.getItem("entrada") || "").dateTime;
+const Entrada = () => JSON.parse(localStorage.getItem("entrada") || "{}").dateTime;
 
-const Almoco = () => JSON.parse(localStorage.getItem("almoco") || "").dateTime;
+const Almoco = () => JSON.parse(localStorage.getItem("almoco") || "{}").dateTime;
 
-const Saida = () => JSON.parse(localStorage.getItem("saida") || "").dateTime;
+const Saida = () => JSON.parse(localStorage.getItem("saida") || "{}").dateTime;
 
 export default Frequencia;
